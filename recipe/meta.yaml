@@ -10,7 +10,7 @@ source:
   sha256: 9cf36bad56a166456bb2e2f1236c0f800df4c149723f91fd2a5e329e0a0b4ac6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - openapi-python-client = openapi_python_client.cli:app
