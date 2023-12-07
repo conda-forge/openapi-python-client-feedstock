@@ -1,5 +1,5 @@
 {% set name = "openapi-python-client" %}
-{% set version = "0.15.0" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openapi_python_client-{{ version }}.tar.gz
-  sha256: 98bae15f7f960b5dd1e621d751449c2063cd773e70db2589420ce60ad2090c84
+  sha256: c1b76d97d1276462445cded66b8e0c9095fa11002f695e5dcc212b45b8bfee9c
 
 build:
   number: 0
@@ -20,23 +20,20 @@ requirements:
   host:
     - pip
     - poetry
-    - python >=3.7
+    - python >=3.8
   run:
     - attrs >=21.3.0
-    - autoflake >=1.4,<3.0
-    - black
     - colorama >=0.4.3,<0.5.0
-    - httpx >=0.15.4,<0.24.0
-    - importlib_metadata >2,<7
-    - isort >=5.0.5,<6.0.0
+    - httpx >=0.20.0,<0.26.0
     - jinja2 >=3.0.0,<4.0.0
-    - pydantic >=1.6.1,<2.0.0
-    - python >=3.7
+    - pydantic >=2.1.1,<3
+    - python >=3.8
     - python-dateutil >=2.8.1,<3.0.0
     - pyyaml >=6.0,<7.0
+    - ruff >=0.1.2
     - shellingham >=1.3.2,<2.0.0
-    - typer >=0.6,<0.8
-    - typing-extensions
+    - typer >=0.6,<0.10
+    - typing-extensions >=4.8.0,<5.0
 
 test:
   imports:
