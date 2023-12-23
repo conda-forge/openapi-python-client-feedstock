@@ -1,5 +1,5 @@
 {% set name = "openapi-python-client" %}
-{% set version = "0.16.0" %}
+{% set version = "0.16.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openapi_python_client-{{ version }}.tar.gz
-  sha256: c1b76d97d1276462445cded66b8e0c9095fa11002f695e5dcc212b45b8bfee9c
+  sha256: bb5803a10a27a00158daf1c23311facc02fd68471c91631165dce8f2f3161607
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
   run:
     - attrs >=21.3.0
     - colorama >=0.4.3,<0.5.0
-    - httpx >=0.20.0,<0.26.0
+    - httpx >=0.20.0,<0.27.0
     - jinja2 >=3.0.0,<4.0.0
     - pydantic >=2.1.1,<3
     - python >=3.8
