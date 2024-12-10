@@ -1,13 +1,13 @@
 {% set name = "openapi-python-client" %}
-{% set version = "0.21.7" %}
+{% set version = "0.22.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openapi_python_client-{{ version }}.tar.gz
-  sha256: 02a4800f6191237e5d9abd9b727d0bcf9165e2617f597c03eaa23a5625f466e3
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openapi_python_client-{{ version }}.tar.gz
+  sha256: b0ef2398c6b7f754f5a177ed9db77dfc244562cd1c62e6abb4cb10571e417f76
 
 build:
   number: 0
