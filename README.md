@@ -3,7 +3,7 @@ About openapi-python-client-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openapi-python-client-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/triaxtec/openapi-python-client
+Home: https://github.com/openapi-generators/openapi-python-client
 
 Package license: MIT
 
