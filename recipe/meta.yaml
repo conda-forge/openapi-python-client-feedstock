@@ -51,5 +51,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - wolfgang-noichl
     - asford
     - tdsmith
