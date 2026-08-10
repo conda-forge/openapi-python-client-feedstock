@@ -3,7 +3,7 @@ About openapi-python-client-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openapi-python-client-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/triaxtec/openapi-python-client
+Home: https://github.com/openapi-generators/openapi-python-client
 
 Package license: MIT
 
@@ -16,7 +16,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/openapi-python-client-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/openapi-python-client-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
