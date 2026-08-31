@@ -3,7 +3,7 @@ About openapi-python-client-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openapi-python-client-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/openapi-generators/openapi-python-client
+Home: https://github.com/triaxtec/openapi-python-client
 
 Package license: MIT
 
@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `openapi-python-client` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install openapi-python-client
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install openapi-python-client
 ```
 
-It is possible to list all of the versions of `openapi-python-client` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add openapi-python-client
+# for installing globally
+pixi global install openapi-python-client
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `openapi-python-client` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search openapi-python-client --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search openapi-python-client --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search openapi-python-client --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds openapi-python-client --channel conda-forge
 # List dependencies of `openapi-python-client`:
 mamba repoquery depends openapi-python-client --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -146,4 +190,5 @@ Feedstock Maintainers
 
 * [@asford](https://github.com/asford/)
 * [@tdsmith](https://github.com/tdsmith/)
+* [@wolfgang-noichl](https://github.com/wolfgang-noichl/)
 
