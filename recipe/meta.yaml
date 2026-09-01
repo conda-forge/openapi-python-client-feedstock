@@ -1,16 +1,16 @@
 {% set name = "openapi-python-client" %}
-{% set version = "0.29.0" %}
+{% set version = "0.29.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openapi_python_client-{{ version }}.tar.gz
-  sha256: 4ff439a63765aaef548e69c4eedd86dfad57891dc322709450af0c2c9a72a23e
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/openapi_python_client-{{ version }}.tar.gz
+  sha256: 7e05c904fb4840c17b4a9fff05cc53dfd97d45b486d9462ffb7ecf9c98e67e25
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - openapi-python-client = openapi_python_client.cli:app
