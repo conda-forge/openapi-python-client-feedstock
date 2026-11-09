@@ -37,7 +37,10 @@ test:
   imports:
     - openapi_python_client
   commands:
-    - pip check
+    # conda-forge's ruff is a Rust binary with no Python dist-info, so `pip check`
+    # always reports it as missing. Fail on any other broken requirement.
+    - test -z "$(pip check | grep -v -e ruff -e 'No broken requirements')"
+    - ruff --version
     - openapi-python-client --help
   requires:
     - pip
